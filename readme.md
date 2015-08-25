@@ -1,4 +1,4 @@
-## Advanced Log Parser
+## log2es
 Load arbritrary plain-text logs into ElasticSearch
 
 ## Quick start
@@ -6,7 +6,7 @@ Load arbritrary plain-text logs into ElasticSearch
 Load the first two fields from /etc/passwd:
 
 <pre>
-./logparser.pl \
+./logparser-es.pl \
         --regex '^(?&lt;name>[^:]+):(?&lt;password>[^:]+)' \
         --es 'http://127.0.0.1:9200/aaaforensics/logs/' \
         /etc/passwd
