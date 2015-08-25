@@ -51,7 +51,6 @@ sub parse_line
     my ($line) = @_;
     if ($line =~ /$opts{regex}/)
     {
-#        say Dumper (\%+);
         my $resp = $ua->post ($opts{es}, Content => encode_json (\%+));
         my $data = $resp->decoded_content;
         eval 
