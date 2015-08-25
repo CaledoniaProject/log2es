@@ -1,7 +1,17 @@
 ## log2es
 Load arbritrary plain-text logs into ElasticSearch
 
-## Quick start
+## Installation
+
+1. Get ElasticSearch server ready
+
+2. Setup Perl Environment
+
+```
+cpan LWP::UserAgent JSON::XS
+```
+
+## Example usage
 
 Load the first two fields from /etc/passwd:
 
