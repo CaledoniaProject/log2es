@@ -3,7 +3,7 @@ Load arbritrary plain-text logs into ElasticSearch
 
 ## Installation
 
-1. Get ElasticSearch server ready
+1. Get ElasticSearch server ready 
 
 2. Setup Perl Environment
 
@@ -22,9 +22,7 @@ Load the first two fields from /etc/passwd:
         /etc/passwd
 </pre>
 
-## Perform database query
-
-Lookup data,
+## Lookup data
 
 ```
 curl 127.0.0.1:9200/aaaforensics/_search | json_pp
